@@ -22,3 +22,6 @@ _testmain.go
 *.exe
 *.test
 *.prof
+*.meta
+client/Unity/ZTurn/Library
+client/Unity/ZTurn/Temp
