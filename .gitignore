@@ -25,3 +25,4 @@ _testmain.go
 *.meta
 client/Unity/ZTurn/Library
 client/Unity/ZTurn/Temp
+client/Unity/ZTurn/.consulo
