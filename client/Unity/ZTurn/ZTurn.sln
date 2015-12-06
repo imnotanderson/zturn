@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{C774D1BE-B744-D459-BD1E-84FD7A01679A}") = "ZTurn", "Assembly-CSharp.csproj", "{5BA763A2-A0F8-9F15-AE17-31987C15F0EB}"
 EndProject
+Project("{C774D1BE-B744-D459-BD1E-84FD7A01679A}") = "ZTurn", "Assembly-CSharp-Editor.csproj", "{91900E60-703A-0C91-041E-2DDE31818A45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{5BA763A2-A0F8-9F15-AE17-31987C15F0EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BA763A2-A0F8-9F15-AE17-31987C15F0EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BA763A2-A0F8-9F15-AE17-31987C15F0EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91900E60-703A-0C91-041E-2DDE31818A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91900E60-703A-0C91-041E-2DDE31818A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91900E60-703A-0C91-041E-2DDE31818A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91900E60-703A-0C91-041E-2DDE31818A45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
