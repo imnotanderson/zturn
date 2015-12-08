@@ -7,12 +7,16 @@ public class GameMain :MonoBehaviour {
     void Start(){
         game = new Game();
         InitMap();
-        game.AddPlayer(Vector2.up*2);
+        game.AddPlayer(Vector2.up*10);
     }
 
     void InitMap(){
         for (int i=-10;i<10;i++)
             game.AddBox(i,0,BOX_TYPE.BRICK);
+    }
+
+    void Update() {
+        game.Loop(0.02f);
     }
 
     void OnDrawGizmos(){

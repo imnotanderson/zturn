@@ -26,3 +26,17 @@ _testmain.go
 client/Unity/ZTurn/Library
 client/Unity/ZTurn/Temp
 client/Unity/ZTurn/.consulo
+
+client/Unity/ZTurn/Assembly-CSharp.csproj
+client/Unity/ZTurn/Assembly-CSharp-Editor.csproj
+client/Unity/ZTurn/Assembly-CSharp-Editor-vs.csproj
+client/Unity/ZTurn/Assembly-CSharp-vs.csproj
+client/Unity/ZTurn/UnityVS.ZTurn.CSharp.csproj
+client/Unity/ZTurn/UnityVS.ZTurn.CSharp.Editor.csproj
+client/Unity/ZTurn/UnityVS.ZTurn.sln
+client/Unity/ZTurn/UnityVS.ZTurn.v12.suo
+client/Unity/ZTurn/ZTurn.sln
+client/Unity/ZTurn/ZTurn-csharp.sln
+client/Unity/ZTurn/ZTurn.sln
+client/Unity/ZTurn/Assets/UnityVS/
+client/Unity/ZTurn/ZTurn.sln
