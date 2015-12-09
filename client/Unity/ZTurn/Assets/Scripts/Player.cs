@@ -1,5 +1,8 @@
+using Mono.Xml.Schema;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using UnityEditorInternal;
 using UnityEngine;
 
 public enum PLAYER_ACTION{
@@ -9,7 +12,7 @@ public enum PLAYER_ACTION{
 
 public class Player
 {
-    public float fSpeed = 5;
+    public float fSpeedMax = 50;
     public Vector2 speed = Vector2.zero;
     public Vector2 pos;
     public int intPosX
@@ -42,22 +45,29 @@ public class Player
         return actionQueue.Dequeue();
     }
 
-    public Vector3 GetActionSpeed(float stepTime)
+    public void HandleAction(float stepTime)
     {
+        float fVal1 = PARAM.m.fVal1;
+        float xSpeed = speed.x;
         switch (GetAction())
         {
             case PLAYER_ACTION.NONE:
-                return Vector3.zero;
+                xSpeed = Mathf.MoveTowards(xSpeed,0,stepTime*fVal1);
+                speed.x = xSpeed;
+                return ;
             case PLAYER_ACTION.LEFT:
-                return Vector3.left * fSpeed;
+                xSpeed = Mathf.MoveTowards(xSpeed,-fSpeedMax,stepTime*fVal1);
+                speed.x = xSpeed;
+                return ;
             case PLAYER_ACTION.RIGHT:
-                return Vector3.right * fSpeed;
+                xSpeed = Mathf.MoveTowards(xSpeed,+fSpeedMax,stepTime*fVal1);
+                speed.x = xSpeed;
+            return ;
             case PLAYER_ACTION.JUMP:
                 this.speed += Vector2.up * 300 * stepTime;
                 break;
             default:
                 break;
         }
-        return Vector3.zero;
     }
 }

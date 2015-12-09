@@ -38,8 +38,8 @@ public class Game {
         foreach (Player player in playerList)
         {
             player.speed += g * stepTime;
-            Vector2 actionSpeed = player.GetActionSpeed(stepTime);
-            player.pos += (player.speed + actionSpeed) * stepTime;
+            player.HandleAction(stepTime);
+            player.pos += player.speed * stepTime;
             int x = player.intPosX;
             int y = player.intPosY;
             if (GetBox(x, y) == BOX_TYPE.BRICK)
